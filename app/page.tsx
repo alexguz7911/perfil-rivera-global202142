@@ -302,33 +302,41 @@ export default function HomePage() {
                   Complete el formulario y nos pondremos en contacto en menos de 24 horas
                 </CardDescription>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <label className="text-sm font-medium">Nombre</label>
-                    <input className="w-full mt-1 px-3 py-2 border border-border rounded-md bg-input" />
+              <CardContent>
+                <form action="https://formsubmit.co/eurijimeneza@gmail.com" method="POST" className="space-y-4">
+                  <input type="hidden" name="_subject" value="Nuevo mensaje de contacto - Rivera Global" />
+                  <input type="hidden" name="_captcha" value="false" />
+                  <input type="hidden" name="_next" value="https://perfil-rivera-global202142.vercel.app/#contacto" />
+                  
+                  <div className="grid grid-cols-2 gap-4">
+                    <div>
+                      <label className="text-sm font-medium">Nombre</label>
+                      <input name="nombre" required className="w-full mt-1 px-3 py-2 border border-border rounded-md bg-input" />
+                    </div>
+                    <div>
+                      <label className="text-sm font-medium">Apellido</label>
+                      <input name="apellido" required className="w-full mt-1 px-3 py-2 border border-border rounded-md bg-input" />
+                    </div>
                   </div>
                   <div>
-                    <label className="text-sm font-medium">Apellido</label>
-                    <input className="w-full mt-1 px-3 py-2 border border-border rounded-md bg-input" />
+                    <label className="text-sm font-medium">Email</label>
+                    <input type="email" name="email" required className="w-full mt-1 px-3 py-2 border border-border rounded-md bg-input" />
                   </div>
-                </div>
-                <div>
-                  <label className="text-sm font-medium">Email</label>
-                  <input type="email" className="w-full mt-1 px-3 py-2 border border-border rounded-md bg-input" />
-                </div>
-                <div>
-                  <label className="text-sm font-medium">Empresa</label>
-                  <input className="w-full mt-1 px-3 py-2 border border-border rounded-md bg-input" />
-                </div>
-                <div>
-                  <label className="text-sm font-medium">Mensaje</label>
-                  <textarea
-                    rows={4}
-                    className="w-full mt-1 px-3 py-2 border border-border rounded-md bg-input"
-                  ></textarea>
-                </div>
-                <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">Enviar Mensaje</Button>
+                  <div>
+                    <label className="text-sm font-medium">Empresa</label>
+                    <input name="empresa" className="w-full mt-1 px-3 py-2 border border-border rounded-md bg-input" />
+                  </div>
+                  <div>
+                    <label className="text-sm font-medium">Mensaje</label>
+                    <textarea
+                      name="mensaje"
+                      required
+                      rows={4}
+                      className="w-full mt-1 px-3 py-2 border border-border rounded-md bg-input"
+                    ></textarea>
+                  </div>
+                  <Button type="submit" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">Enviar Mensaje</Button>
+                </form>
               </CardContent>
             </Card>
           </div>
