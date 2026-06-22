@@ -56,16 +56,21 @@ export default function HomePage() {
               organización
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-                Conocer Servicios
-                <ChevronRight className="ml-2 h-5 w-5" />
+              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground" asChild>
+                <a href="#servicios">
+                  Conocer Servicios
+                  <ChevronRight className="ml-2 h-5 w-5" />
+                </a>
               </Button>
               <Button
                 size="lg"
                 variant="outline"
                 className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary bg-transparent"
+                asChild
               >
-                Agendar Reunión
+                <a href="#contacto">
+                  Agendar Reunión
+                </a>
               </Button>
             </div>
           </div>
