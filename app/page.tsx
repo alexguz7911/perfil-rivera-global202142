@@ -242,9 +242,9 @@ export default function HomePage() {
             </div>
             <div className="relative">
               <img
-                src="/RIVERA.JPG"
-                alt="Equipo Rivera Global"
-                className="rounded-lg shadow-lg w-full"
+                src="/Global Consulting.png"
+                alt="Logo Rivera Global"
+                className="rounded-lg shadow-lg w-full object-contain"
               />
             </div>
           </div>
