@@ -10,7 +10,7 @@ export default function HomePage() {
     <>
       <title>Rivera Global</title>
       <meta name="description" content="Consultoría estratégica y servicios empresariales integrales" />
-      <link rel="icon" href="/Global Consulting.png" type="image/png" />
+      <link rel="icon" href="/favicon.png" type="image/png" />
     </>
       <header className="sticky top-0 z-50 bg-primary text-primary-foreground shadow-sm">
         <div className="container mx-auto px-4 py-4">
